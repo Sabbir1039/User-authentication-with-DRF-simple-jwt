@@ -1,0 +1,28 @@
+# Virtual environment
+venv/
+env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django-related
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+media/
+static/
+local_settings.py
+
+# VS Code specific files
+.vscode/
+
+# Pytest cache
+__pycache__/
+.pytest_cache/
+
+# Ignore .env file containing sensitive information
+.env
