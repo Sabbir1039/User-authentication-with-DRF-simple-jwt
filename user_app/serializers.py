@@ -7,6 +7,8 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ['id', 'username', 'email', 'password']
         extra_kwargs = {'password': {'write_only':True}}
         
+        
+    # it will trigger by serializer.save() in views
     def create(self, validated_data):
         user = User(
             username=validated_data['username'],
